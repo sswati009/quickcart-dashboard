@@ -18,7 +18,7 @@ Add to cart (UI counter)
 Error handling with fallback message
 Responsive design using Bootstrap
 
-Challenges Faced
+Challenges Faced:
 Managing original vs filtered product data
 Implementing search without breaking filters
 Handling async API calls properly
