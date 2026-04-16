@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCart Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark p-3">
+  <span class="navbar text-white">QuickCart</span>
+  <span class="text-white">Cart:<span id="cart">0</span></span>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- Controls -->
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <input type="text" id="Input" class="form" placeholder="Search products...">
+    </div>
+
+    <div class="col-md-3">
+      <select id="category" class="form-select">
+        <option value="all">Categories</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select id="Option" class="form-select">
+        <option value="">Sort by Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Loader -->
+  <div id="buffer" class="text-center">Loading...</div>
+
+  <!-- Product Grid -->
+  <div class="row" id="product"></div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="productModel" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content p-3" id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.JS"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
